@@ -66,7 +66,7 @@ div.splash div.background{
 div.splash div.gradient{
 position: absolute;
 inset: 0;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
 }
 
 div.splash div.background img{
@@ -91,17 +91,63 @@ div.splash h1{
 }
 div.splash h2{
   font-size: 1.625rem;
-  font-weight: 400;
+  font-weight: normal;
   margin-top: 13px;
   margin-bottom: 29px;
 }
 div.splash h3{
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: normal;
 }
 div.splash form{
+  position: relative;
+display:grid;
+grid-template-columns: 1fr max-content;
+margin-top:20px; 
+left:-5%;
+
+}
+div.splash input{
+  padding: 14px;
+  font-size: 1.2rem;
+  width:40%;
+  background-color: rgba(23, 23, 23, 0.8);
 
 
 }
+div.splash input ~ span{
+  position:absolute;
+  left:17rem;
+  top:11px;
+  z-index: 3;
+  color: white;
+  transition: all 0.15s ease-in-out;
+  pointer-events: none;
+}
+div.splash input:focus{
+  padding-top: 14px;
+  padding-bottom: 6px;
+}
+div.splash input:focus ~ span{
+  top:2px;
+  font-size: 0.8rem;
+}
+div.splash button{
+  background-color: rgb(229,9,20);
+
+  border-radius: 3px;
+  color: white;
+  padding: 14px 17px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  
+  
+  
+  
+}
+
+
 
 
