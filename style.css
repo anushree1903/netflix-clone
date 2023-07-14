@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+background-color: black;
+}
+header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding:26px 56px;
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
+header a.logo{
+  display: block;
+}
+header .logo svg{
+  color: rgb(229,9,20);
+  fill: currentColor;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 100px;
+}
+header div+div{
+  text-align: right;
+}
+header a.button{
+  background-color: rgb(229,9,20);
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  padding: 6px 17px;
+  text-decoration: none;
+  font-weight: bold;
+}
+header select{
+  background-color: rgba(23, 23, 23, 0.8);
+  color: white;
+  padding: 6px 0 6px 35px;
+  padding-left: 30px;
+  border-radius: 3px;
+  font: 1em sans-serif;
+
+}
+header div.select svg {
+height: 20px;
+color: white;
+position:absolute;
+margin-top: 7px;
+margin-left: 0px;
+padding-left: 5px;
+
+}
+header div.select{
+ margin-right: 30px;
+  display: inline-block;
+}
+div.splash div.background{
+  position: relative;
+}
+
+div.splash div.gradient{
+position: absolute;
+inset: 0;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+div.splash div.background img{
+  max-width: 100%;
+  opacity: 0.6;
+}
+div.splash div.content{
+  max-width: 1000px;
+  position: absolute;
+  inset: 0;
+  left:35%;
+  margin-left:-300.5px;
+  display: grid;
+  align-items: center;
+  color: white;
+  text-align: center; 
+  top:10%;
+}
+div.splash h1{
+  font-size: 3rem;
+  font-weight: 900;
+}
+div.splash h2{
+  font-size: 1.625rem;
+  font-weight: 400;
+  margin-top: 13px;
+  margin-bottom: 29px;
+}
+div.splash h3{
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+div.splash form{
+
+
+}
+
+
