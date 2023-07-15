@@ -71,7 +71,6 @@ background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0)
 
 div.splash div.background img{
   max-width: 100%;
-
   opacity: 0.6;
 }
 div.splash div.content{
@@ -144,13 +143,18 @@ section{
   grid-template-columns: 1fr 1fr;
   gap:46px;
   padding: 70px 40px ;
-  margin-left: 8rem;
-  margin-top:8rem;
+ 
+  border-top: 5px solid #666;
+  
+  
 }
 section div.texts h1{
   font-size: 3rem;
   color: white;
  font-weight: 900;
+ margin-left: 5rem;
+  margin-top: 8rem;
+
   
 
 }
@@ -160,43 +164,80 @@ section div.texts p{
   margin-top: 13px;
   margin-bottom: 29px;
   color: white;
+  margin-left: 5rem;
+
+
+
 }
 .media{
   position: relative;
- margin-top: -8rem;
- margin-right: 5rem;
+ margin-top: 2rem;
+ margin-right: 4rem;
+
 }
 .media.s1 img{
-  width:600px;
+  width:500px;
 }
 .media.s1 video{
-  width:437px;
+  width:359px;
   position: absolute;
-  left:5rem;
-  top:5.8rem; 
+  left:4.4rem;
+  top:5rem; 
 }
 section:nth-child(even) div.texts{
   order:2;
- 
-}
+  margin-right: 2rem; 
+  margin-top: 4rem;
 
+
+}
 
 section div.download{
   border:2px solid #666;
   border-radius:15px;
   padding: 10px;
   height:90px;
-  width:24rem;
+  width:20rem;
   z-index: 3;
   top: 20%;
-  margin-left: 20%; 
+  margin-left: 25%; 
   display: grid;
   grid-template-columns: max-content 1fr max-content;
 }
 section div.download img{
 padding: 5px;
-height:75px;
+height:60px;
 width:auto;
+
+
+}
+section div.download span{
+color:white;
+display:flex;
+margin-left:2rem;
+margin-top: 1.3rem;
+}
+.media.s3 img{
+  width:550px;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 5;
+
+}
+.media.s3 video{
+  width:350px;
+  position: absolute;
+  left:6rem;
+  margin-top: 3rem; 
+}
+.media.s4 img{
+  width:600px;
+  margin-top: -1rem;
+  margin-left: 5rem;
+  position: relative;
+}
+section.last{
+  border-bottom: 5px solid #666;
 }
 
 
