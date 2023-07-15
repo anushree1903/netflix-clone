@@ -71,20 +71,22 @@ background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0)
 
 div.splash div.background img{
   max-width: 100%;
+
   opacity: 0.6;
 }
 div.splash div.content{
   max-width: 1000px;
+  left:50%;
+  margin-left:18rem;
   position: absolute;
   inset: 0;
-  left:35%;
-  margin-left:-300.5px;
   display: grid;
   align-items: center;
   color: white;
   text-align: center; 
-  top:10%;
+  top:12%;
 }
+
 div.splash h1{
   font-size: 3rem;
   font-weight: 900;
@@ -96,57 +98,108 @@ div.splash h2{
   margin-bottom: 29px;
 }
 div.splash h3{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: normal;
 }
 div.splash form{
-  position: relative;
-display:grid;
-grid-template-columns: 1fr max-content;
+display: flex;
+justify-content: center;
 margin-top:20px; 
-left:-5%;
+margin-left: 1rem;
 
 }
 div.splash input{
+width: 26rem;
   padding: 14px;
   font-size: 1.2rem;
-  width:40%;
   background-color: rgba(23, 23, 23, 0.8);
-
-
 }
 div.splash input ~ span{
   position:absolute;
-  left:17rem;
-  top:11px;
+  left:15rem;
+  top:24.5rem;
   z-index: 3;
   color: white;
   transition: all 0.15s ease-in-out;
   pointer-events: none;
 }
-div.splash input:focus{
-  padding-top: 14px;
-  padding-bottom: 6px;
-}
+
 div.splash input:focus ~ span{
-  top:2px;
+
   font-size: 0.8rem;
 }
 div.splash button{
   background-color: rgb(229,9,20);
-
+margin-left:1rem;
   border-radius: 3px;
   color: white;
   padding: 14px 17px;
   font-size: 1.2rem;
   font-weight: bold;
   border: none;
-  cursor: pointer;
-  
-  
-  
-  
+  cursor: pointer;  
 }
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap:46px;
+  padding: 70px 40px ;
+  margin-left: 8rem;
+  margin-top:8rem;
+}
+section div.texts h1{
+  font-size: 3rem;
+  color: white;
+ font-weight: 900;
+  
+
+}
+section div.texts p{
+  font-size: 1.625rem;
+  font-weight: normal;
+  margin-top: 13px;
+  margin-bottom: 29px;
+  color: white;
+}
+.media{
+  position: relative;
+ margin-top: -8rem;
+ margin-right: 5rem;
+}
+.media.s1 img{
+  width:600px;
+}
+.media.s1 video{
+  width:437px;
+  position: absolute;
+  left:5rem;
+  top:5.8rem; 
+}
+section:nth-child(even) div.texts{
+  order:2;
+ 
+}
+
+
+section div.download{
+  border:2px solid #666;
+  border-radius:15px;
+  padding: 10px;
+  height:90px;
+  width:24rem;
+  z-index: 3;
+  top: 20%;
+  margin-left: 20%; 
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+}
+section div.download img{
+padding: 5px;
+height:75px;
+width:auto;
+}
+
+
 
 
 
