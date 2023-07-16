@@ -44,7 +44,6 @@ header select{
   padding-left: 30px;
   border-radius: 3px;
   font: 1em sans-serif;
-
 }
 header div.select svg {
 height: 20px;
@@ -53,7 +52,6 @@ position:absolute;
 margin-top: 7px;
 margin-left: 0px;
 padding-left: 5px;
-
 }
 header div.select{
  margin-right: 30px;
@@ -62,7 +60,6 @@ header div.select{
 div.splash div.background{
   position: relative;
 }
-
 div.splash div.gradient{
 position: absolute;
 inset: 0;
@@ -100,35 +97,79 @@ div.splash h3{
   font-size: 1.3rem;
   font-weight: normal;
 }
-div.cta form{
+div.splash form{
 display: flex;
 justify-content: center;
 margin-top:20px; 
 margin-left: 1rem;
 
 }
-div.cta input{
-width: 26rem;
+div.splash input{
+  width: 26rem;
   padding: 14px;
   font-size: 1.2rem;
   background-color: rgba(23, 23, 23, 0.8);
 }
-div.cta input ~ span{
+div.splash input ~ span{
   position:absolute;
   left:15rem;
-  top:23.6rem;
+  top:24rem;
   z-index: 3;
   color: white;
   transition: all 0.15s ease-in-out;
   pointer-events: none;
 }
 
-div.cta input:focus ~ span{
+div.splash input:focus ~ span{
   font-size: 0.8rem;
 }
-div.cta button{
+div.splash button{
   background-color: rgb(229,9,20);
-margin-left:1rem;
+  margin-left:1rem;
+  border-radius: 3px;
+  color: white;
+  padding: 14px 17px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;  
+}
+div .content1 h3{
+  font-weight:normal;
+  font-size:1rem;
+  margin-top: 1rem;
+}
+div .content1 form{
+  display: flex;
+justify-content: center;
+margin-top:20px; 
+margin-left: 1rem;
+}
+::placeholder{
+  color: white;
+  font-size: 1rem;
+}
+div.content1 input{
+  width: 26rem;
+  padding: 14px;
+  font-size: 1.2rem;
+  background-color: rgba(23, 23, 23, 0.8);
+}
+div.content1 input ~ span{
+  position:absolute;
+  left:15rem;
+  top:24rem;
+  z-index: 3;
+  color: white;
+  transition: all 0.15s ease-in-out;
+  pointer-events: none;
+}
+div.content1 input:focus ~ span{
+  font-size: 0.8rem;
+}
+div.content1 button{
+  background-color: rgb(229,9,20);
+  margin-left:1rem;
   border-radius: 3px;
   color: white;
   padding: 14px 17px;
@@ -143,8 +184,6 @@ section{
   gap:46px;
   padding: 70px 40px ;
   border-top: 8px solid #333;
-  
-  
 }
 section div.texts h1{
   font-size: 3rem;
@@ -152,7 +191,6 @@ section div.texts h1{
  font-weight: 900;
  margin-left: 5rem;
   margin-top: 8rem;
-
 }
 section div.texts p{
   font-size: 1.625rem;
@@ -296,50 +334,7 @@ div.question input[type="checkbox"]:checked ~ div.answer{
 div.question input[type="checkbox"]:checked ~ .header svg{
 transform:rotate(180deg);
 }
-div.faq h3{
-  margin-top: 3rem;
-  font-weight: normal;
-  text-align: center;
-}
-div.faq form{
-  border-bottom: 8px solid #333;
-margin-left: -2rem;
-margin-right: -2rem;
-  padding-bottom: 5rem;
-  
-}
-div.faq input{
-  width: 26rem;
-    padding: 14px;
-    font-size: 1.2rem;
-    background-color: rgba(23, 23, 23, 0.8);
-  }
-  div.faq input ~ span{
-    position:absolute;
-    left:15rem;
-    top:23.6rem;
-    z-index: 3;
-    color: white;
-    transition: all 0.15s ease-in-out;
-    pointer-events: none;
-  }
-  
-  div.faq input:focus ~ span{
-  
-    font-size: 0.8rem;
-  }
-  div.faq button{
-    background-color: rgb(229,9,20);
-  margin-left:1rem;
-    border-radius: 3px;
-    color: white;
-    padding: 14px 17px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: none;
-    cursor: pointer;  
-  }
- 
+
 .footer h2{
   font-size: 1rem;
   font-weight: 400;
