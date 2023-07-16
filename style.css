@@ -116,7 +116,7 @@ width: 26rem;
 div.cta input ~ span{
   position:absolute;
   left:15rem;
-  top:24.5rem;
+  top:23.6rem;
   z-index: 3;
   color: white;
   transition: all 0.15s ease-in-out;
@@ -124,7 +124,6 @@ div.cta input ~ span{
 }
 
 div.cta input:focus ~ span{
-
   font-size: 0.8rem;
 }
 div.cta button{
@@ -143,8 +142,7 @@ section{
   grid-template-columns: 1fr 1fr;
   gap:46px;
   padding: 70px 40px ;
- 
-  border-top: 5px solid #666;
+  border-top: 8px solid #333;
   
   
 }
@@ -228,7 +226,7 @@ margin-top: 1.3rem;
   position: relative;
 }
 section.last{
-  border-bottom: 5px solid #666;
+  border-bottom: 8px solid #333;
 }
 div.faq{
   padding:70px 30px;
@@ -298,6 +296,107 @@ div.question input[type="checkbox"]:checked ~ div.answer{
 div.question input[type="checkbox"]:checked ~ .header svg{
 transform:rotate(180deg);
 }
+div.faq h3{
+  margin-top: 3rem;
+  font-weight: normal;
+  text-align: center;
+}
+div.faq form{
+  border-bottom: 8px solid #333;
+margin-left: -2rem;
+margin-right: -2rem;
+  padding-bottom: 5rem;
+  
+}
+div.faq input{
+  width: 26rem;
+    padding: 14px;
+    font-size: 1.2rem;
+    background-color: rgba(23, 23, 23, 0.8);
+  }
+  div.faq input ~ span{
+    position:absolute;
+    left:15rem;
+    top:23.6rem;
+    z-index: 3;
+    color: white;
+    transition: all 0.15s ease-in-out;
+    pointer-events: none;
+  }
+  
+  div.faq input:focus ~ span{
+  
+    font-size: 0.8rem;
+  }
+  div.faq button{
+    background-color: rgb(229,9,20);
+  margin-left:1rem;
+    border-radius: 3px;
+    color: white;
+    padding: 14px 17px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;  
+  }
+ 
+.footer h2{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  margin-left: -55rem;
+}
+.footer span{
+
+  text-decoration: underline;
+}
+.footer .col{
+  width: 25%;
+ padding-left: 11rem;
+ padding-top: 3rem;
+  float: left;
+  box-sizing: border-box;
+  text-decoration: underline;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+.footer .col a{
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+}
+footer select{
+  background-color: rgba(23, 23, 23, 0.8);
+  color: white;
+  padding: 6px 0 6px 35px;
+  padding-left: 30px;
+  border-radius: 3px;
+  font: 1em sans-serif;
+}
+footer div.select svg {
+  height: 20px;
+  color: white;
+  position:absolute;
+  margin-top: 7px;
+  margin-left: 0px;
+  padding-left: 5px;
+  }
+footer div.select{
+ margin-right: 30px;
+  display: inline-block;
+  margin-left: -130rem;
+  margin-top: 14rem;
+}
+h5{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: -64rem;
+}
+
 
 
 
