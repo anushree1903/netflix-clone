@@ -100,20 +100,20 @@ div.splash h3{
   font-size: 1.3rem;
   font-weight: normal;
 }
-div.splash form{
+div.cta form{
 display: flex;
 justify-content: center;
 margin-top:20px; 
 margin-left: 1rem;
 
 }
-div.splash input{
+div.cta input{
 width: 26rem;
   padding: 14px;
   font-size: 1.2rem;
   background-color: rgba(23, 23, 23, 0.8);
 }
-div.splash input ~ span{
+div.cta input ~ span{
   position:absolute;
   left:15rem;
   top:24.5rem;
@@ -123,11 +123,11 @@ div.splash input ~ span{
   pointer-events: none;
 }
 
-div.splash input:focus ~ span{
+div.cta input:focus ~ span{
 
   font-size: 0.8rem;
 }
-div.splash button{
+div.cta button{
   background-color: rgb(229,9,20);
 margin-left:1rem;
   border-radius: 3px;
@@ -155,8 +155,6 @@ section div.texts h1{
  margin-left: 5rem;
   margin-top: 8rem;
 
-  
-
 }
 section div.texts p{
   font-size: 1.625rem;
@@ -165,8 +163,6 @@ section div.texts p{
   margin-bottom: 29px;
   color: white;
   margin-left: 5rem;
-
-
 
 }
 .media{
@@ -188,8 +184,6 @@ section:nth-child(even) div.texts{
   order:2;
   margin-right: 2rem; 
   margin-top: 4rem;
-
-
 }
 
 section div.download{
@@ -208,8 +202,6 @@ section div.download img{
 padding: 5px;
 height:60px;
 width:auto;
-
-
 }
 section div.download span{
 color:white;
@@ -222,7 +214,6 @@ margin-top: 1.3rem;
   margin-top: 1rem;
   position: relative;
   z-index: 5;
-
 }
 .media.s3 video{
   width:350px;
@@ -239,6 +230,75 @@ margin-top: 1.3rem;
 section.last{
   border-bottom: 5px solid #666;
 }
+div.faq{
+  padding:70px 30px;
+  color: white;
+  text-align: center;
+}
+div.fav h1{
+  font-size:3.125rem;
+  text-align: center;
+ 
+}
+div.questions{
+  max-width:1000px;
+  margin:0 auto;
+  
+}
+div.question{
+  position: relative;
+  color: white;
+  background-color: #303030;
+  margin-top: 1.5rem;
+}
+div .header:hover{
+  background-color: #555555;
+}
+
+div.question .header{
+  display: block;
+  padding:20px 30px;
+  margin-top: -1rem;
+  font-weight: 900px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+  text-align: left;
+}
+
+div.question div.answer{
+  padding-left:2rem;
+  padding-top:1rem;
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
+  text-align: left;
+  padding: 0 30px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+div.question  svg{
+  margin-left: 25rem;
+  width: 1rem;
+  margin-top: 4px;
+  position: absolute;
+  transform: rotate(45deg);
+  transition: all 0.2s ease;
+  right: 6%;
+}
+div.question input[type="checkbox"]{
+  display: none;
+}
+div.question input[type="checkbox"]:checked ~ div.answer{
+  padding: 0 30px ;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  max-height: 600px;
+}
+div.question input[type="checkbox"]:checked ~ .header svg{
+transform:rotate(180deg);
+}
+
 
 
 
